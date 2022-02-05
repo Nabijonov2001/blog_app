@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/single_post_style.css">
+</head>
+
+<body>
+    <div class="container py-3">
+        <div class="title h1 text-center">Simple Blog App</div>
+        <!-- Card Start -->
+        <div class="card">
+            <div class="row ">
+
+                <div class="col-md-7 px-3">
+                    <div class="card-block px-6">
+                        <h4 class="card-title"><%= blog.title %> </h4>
+                        <p class="card-text"><%= blog.body %> </p>
+                        <br>
+                        <a href="/" class="btn btn-primary btn-sm float-right">Main Page</a>
+                    </div>
+                
+                </div>
+                <!-- Carousel start -->
+                <div class="col-md-5">
+                    <div id="CarouselTest" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-item active">
+                            <img class="d-block" src="../<%= blog.image_path %> " alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- End of carousel -->
+            </div>
+        </div>
+        <!-- End of card -->
+
+    </div>
+</body>
+
+</html>
